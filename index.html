@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Baju - Estafold Biru</title>
+  <link rel="stylesheet" href="estafold-biru.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="container">
+      <h1 class="logo">Estafold.id</h1>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+    <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-text container">
+      <h1>AYO DESAIN BAJUMU SENDIRI</h1>
+      <p>Buatlah desain baju versimu dengan harga terjangkau dan kualitas premium.</p>
+      <a href="#produk" class="btn">Belanja Sekarang</a>
+    </div>
+  </section>
+
+<!-- Slideshow Banner -->
+<section class="slideshow jar h1"> <!-- Container utama slideshow -->
+  <h2>NEW RELEASE</h2>
+  <!-- Slide pertama -->
+  <div class="slides fade"> <!-- Satu frame/slide -->
+    <img src="gambar/desain2/1.jpg" alt="Reguler Biru"> <!-- Gambar katalog -->
+    <img src="gambar/desain2/4.jpg" alt="">
+    <img src="gambar/desain2/5.jpg" alt="">
+  </div>
+  
+  <!-- Slide kedua -->
+  <div class="slides fade">
+    <img src="gambar/desain2/2.jpg" alt="Oversize Hitam">
+    <img src="gambar/desain2/3.jpg" alt="">
+    <img src="gambar/desain2/6.jpg" alt="">
+  </div>
+  
+  <!-- Tombol untuk geser manual -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Tombol kiri -->
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>  <!-- Tombol kanan -->
+</section>
+
+  <!-- Produk Unggulan -->
+  <section class="featured" id="unggulan">
+    <div class="container">
+      <h2>BEST SELLER</h2>
+      <div class="featured-content">
+        <img src="gambar/bridle.jpg" alt="Jaket Denim Premium">
+        <div class="featured-text">
+          <h3>BRIDLE TSHIRT</h3>
+          <p>
+            Tshirt berkualitas tinggi dengan desain modern yang cocok untuk segala gaya.
+            Nyaman dipakai, stylish, dan tahan lama.
+          </p>
+          <p class="price">Rp350.000</p>
+          <a href="#produk" class="btn">Lihat Produk Lainnya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk Unggulan 2 -->
+<section class="featured.alt">
+  <div class="container">
+    <div class="featured-content">
+      <div class="featured-text">
+        <h3>DISASTEROLOGY TSHIRT</h3>
+        <p>
+          Tshirt dengan detail modern. Cocok untuk tampilan kasual sehari-hari.
+        </p>
+        <p class="price">Rp450.000</p>
+        <a href="#produk" class="btn">Lihat Koleksi</a>
+      </div>
+      <img src="gambar/DISASTEROLOGY.jpg" alt="Denim Jacket Classic">
+    </div>
+  </div>
+</section>
+
+  <!-- Katalog Produk dengan tombol geser -->
+  <section class="catalog" id="produk">
+    <div class="container">
+      <h2>REGULER TSHIRT</h2>
+      <div class="slider-container">
+        <!-- Tombol kiri -->
+        <button class="slider-btn left" id="prevBtn">&#10094;</button>
+
+        <!-- Isi produk -->
+        <div class="slider" id="slider">
+            <!-- Produk 1 -->
+            <div class="card">
+              <img src="gambar/REGULER BIRU.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="card">
+              <img src="gambar/REGULER HITAM.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="card">
+              <img src="gambar/REGULER MAROON.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+
+            <!-- Produk 4 -->
+            <div class="card">
+              <img src="gambar/REGULER MERAH.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+
+            <!-- Produk 5 -->
+            <div class="card">
+              <img src="gambar/REGULER NAVY.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+
+            <!-- Produk 6 -->
+            <div class="card">
+              <img src="gambar/REGULER PUTIH.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+
+            <!-- Produk 7 -->
+            <div class="card">
+              <img src="gambar/REGULER BIRU.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+          </div>
+
+
+        <!-- Tombol kanan -->
+        <button class="slider-btn right" id="nextBtn">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Katalog Produk 2 dengan tombol geser -->
+<section class="catalog" id="produk2">
+  <div class="container">
+    <h2>OVERSIZE TSHIRT</h2>
+    <div class="slider-container">
+      <!-- Tombol kiri -->
+      <button class="slider-btn left" id="prevBtn2">&#10094;</button>
+
+      <!-- Isi produk -->
+      <div class="slider" id="slider2">
+        <!-- Produk 1 -->
+        <div class="card">
+              <img src="gambar/OVESIZED/OVERSIZE ABU.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+
+        <!-- Produk 2 -->
+        <div class="card">
+              <img src="gambar/OVESIZED/OVERSIZE HITAM.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+
+        <!-- Produk 3 -->
+        <div class="card">
+              <img src="gambar/OVESIZED/OVERSIZE KHAKI.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+
+        <!-- Produk 4 -->
+        <div class="card">
+              <img src="gambar/OVESIZED/OVERSIZE MAROON.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+        <div class="card">
+              <img src="gambar/OVESIZED/OVERSIZE NAVY.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+        <div class="card">
+              <img src="gambar/OVESIZED/OVERSIZE PUTIH.png" alt="Kaos Polos">
+              <h3>Kaos Polos Premium</h3>
+              <p>Rp95.000</p>
+            </div>
+      </div>
+
+      <!-- Tombol kanan -->
+      <button class="slider-btn right" id="nextBtn2">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!---->
+<section class="catalog" id="produk4">
+  <div class="container">
+    <h2>LONG TSHIRT</h2>
+    <div class="slider-container">
+      <!-- Tombol kiri -->
+      <button class="slider-btn left" id="prevBtn4">&#10094;</button>
+
+      <!-- Isi produk -->
+      <div class="slider" id="slider4">
+        <!-- Produk 1 -->
+        <div class="card">
+              <img src="gambar/long/LONG BIRU.png" alt="Kaos Polos">
+              <h3>LongTshirt Biru</h3>
+              <p>Rp60.000</p>
+            </div>
+
+        <!-- Produk 2 -->
+        <div class="card">
+              <img src="gambar/long/LONG HITAM.png" alt="Kaos Polos">
+              <h3>LongTshirt Hitam</h3>
+              <p>Rp60.000</p>
+            </div>
+
+
+        <!-- Produk 3 -->
+        <div class="card">
+              <img src="gambar/long/LONG MAROON.png" alt="Kaos Polos">
+              <h3>LongTshirt Maroon</h3>
+              <p>Rp60.000</p>
+            </div>
+
+
+        <!-- Produk 4 -->
+        <div class="card">
+              <img src="gambar/long/LONG MERAH.png" alt="Kaos Polos">
+              <h3>LongTshirt Merah</h3>
+              <p>Rp60.000</p>
+            </div>
+
+            <div class="card">
+              <img src="gambar/long/LONG NAVY.png" alt="Kaos Polos">
+              <h3>LongTshirt Navy</h3>
+              <p>Rp60.000</p>
+            </div>
+            
+            <div class="card">
+              <img src="gambar/long/LONG PUTIH.png" alt="Kaos Polos">
+              <h3>LongTshirt Putih</h3>
+              <p>Rp60.000</p>
+            </div>
+
+
+        
+            
+      </div>
+
+      <!-- Tombol kanan -->
+      <button class="slider-btn right" id="nextBtn4">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- Produk Unggulan 3 -->
+<!-- <section class="featured center">
+  <div class="container">
+    <h2>Best Seller</h2>
+    <div class="featured-content center-style">
+      <img src="gambar/BRIDLE HITAM 2.jpg" alt="Hoodie Premium">
+      <div class="featured-text">
+        <h3>BLACK BRIDLE</h3>
+        <p>
+          Tshirt nyaman dengan bahan tebal dan hangat. Cocok dipakai untuk gaya santai maupun outdoor.
+        </p>
+        <p class="price">Rp280.000</p>
+        <a href="#produk" class="btn">Beli Sekarang</a>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+  <!--Katalog Produk 3 sablon dengan tombol geser-->  
+<section class="catalog" id="produk3">
+  <div class="container">
+    <h2>DESAIN KAMI</h2>
+    <div class="slider-container">
+      <!-- Tombol kiri -->
+      <button class="slider-btn left" id="prevBtn3">&#10094;</button>
+
+      <!-- Isi produk -->
+      <div class="slider" id="slider3">
+        <!-- Produk 1 -->
+        <div class="card">
+              <img src="gambar/DESAIN/2.png" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+
+        <!-- Produk 2 -->
+        <div class="card">
+              <img src="gambar/DESAIN/3.png" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+
+        <!-- Produk 3 -->
+        <div class="card">
+              <img src="gambar/DESAIN/4.png" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+
+        <!-- Produk 4 -->
+        <div class="card">
+              <img src="gambar/DESAIN/5.png" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+        <div class="card">
+              <img src="gambar/DESAIN/Beautiful Cat Eating Ramen.jpg" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+        <div class="card">
+              <img src="gambar/DESAIN/crit.png" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+            <div class="card">
+              <img src="gambar/DESAIN/download (39).jpg" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+            <div class="card">
+              <img src="gambar/DESAIN/23.jpg" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+            <div class="card">
+              <img src="gambar/DESAIN/surfing 2.png" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+            <div class="card">
+              <img src="gambar/DESAIN/18.jpg" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+            <div class="card">
+              <img src="gambar/DESAIN/19.jpg" alt="Kaos Polos">
+              <h3>Desain by Estafold</h3>
+              <p>Rp10.000</p>
+            </div>
+      </div>
+
+      <!-- Tombol kanan -->
+      <button class="slider-btn right" id="nextBtn3">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+    <!-- Gallery / Lookbook Section -->
+    <section class="gallery" id="lookbook"> <!-- Section untuk Lookbook -->
+      <div class="container"> <!-- Container utama untuk membatasi lebar konten -->
+        <div class="gallery-grid"> <!-- Grid untuk menampilkan foto-foto lookbook -->
+          <!-- Setiap gambar adalah item lookbook -->
+          <img src="gambar/DESAIN/6.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/7.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/8.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/9.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/10.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/11.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/12.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/13.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/14.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/15.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/16.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/17.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/20.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/21.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/22.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/24.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/27.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/26.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/25.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          <img src="gambar/DESAIN/28.jpg" alt="Look 1"> <!-- Foto lookbook 1 -->
+          
+        </div>
+      </div>
+    </section>
+
+     <!-- Modal Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span> <!-- Tombol tutup -->
+  <span class="prev">&#10094;</span> <!-- Panah kiri -->
+  <img class="lightbox-content" id="lightbox-img">
+  <span class="next">&#10095;</span> <!-- Panah kanan -->
+</div>
+
+
+
+
+
+
+  <!-- Tentang -->
+  <!--<section class="about" id="tentang">
+    <div class="container">
+      <h2>Tentang Kami</h2>
+      <p>Estafold hadir untuk memberikan pengalaman belanja fashion online yang nyaman, praktis, dan selalu up-to-date dengan tren terbaru.</p>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer>
+  <div class="container footer-content">
+    <!-- Bagian kiri: Kontak -->
+    <div class="footer-info">
+      <h3>Hubungi Kami</h3>
+      <p>📞 WhatsApp: 0812-9854-0346 | ✉️ Email: estafoldid@gmail.com</p>
+    </div>
+
+    <!-- Bagian kanan: Sosial Media -->
+    <div class="footer-social">
+      <h3>Ikuti Kami</h3>
+      <a href="https://instagram.com/estafold" target="_blank">
+        <img src="gambar/sosmed/ig.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://shopee.co.id/estafold" target="_blank">
+        <img src="gambar/sosmed/sp.png" alt="Shopee" class="social-icon-sp">
+      </a>
+    </div>
+  </div>
+
+  <p class="footer-bottom">© 2025 Estafold Indonesia. All rights reserved.</p>
+</footer>
+
+
+  <!-- Panggil file JS eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
