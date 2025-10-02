@@ -112,3 +112,12 @@ function plusSlides(n) {
   slideIndex += n - 1; // Tambah/kurangi index manual (tombol next/prev)
   showSlides();        // Tampilkan slide sesuai index baru
 }
+
+
+// Toggle Hamburger Menu
+const hamburger = document.getElementById("hamburger1");
+const navMenu = document.getElementById("nav-menu1");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
