@@ -35,7 +35,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 header .logo {
@@ -60,6 +60,34 @@ header ul li a:hover {
   text-decoration: underline;
 }
 
+/* Header Style */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Logo di Tengah */
+.nav-logo img {
+  height: 50px;        /* Sesuaikan tinggi logo */
+  display: block;
+  margin: 0 auto;
+}
+
 /* Hero */
 /* Hero dengan parallax dan overlay */
 .hero {
@@ -71,6 +99,18 @@ header ul li a:hover {
   padding: 7rem 1rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.hero2 {
+  background: linear-gradient(rgba(30, 58, 138, 0.6), rgba(30, 58, 138, 0.6)),
+              url("gambar/force-majeure-00tlC0Clfrs-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; /* Parallax effect */
+  color: #fff;
+  padding: 1rem 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
   text-align: center;
 }
 
@@ -156,6 +196,41 @@ header ul li a:hover {
   border-radius: 8px;
   margin-bottom: 0.8rem;
   transition: transform 0.3s;
+}
+
+/* Gambar produk */
+.card-image img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee; /* garis pemisah */
+}
+
+/* Baris 2 */
+.card-info {
+  display: flex;               /* Bagi jadi 2 kolom */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+}
+
+/* Kolom kiri (nama & detail) */
+.info-left h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.info-left h4 {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0.2rem 0 0 0;
+}
+
+/* Kolom kanan (harga) */
+.info-right p {
+  font-weight: bold;
+  color: #2563eb;  /* Biru estafold */
+  margin: 0;
+  text-align: right;
 }
 
 .card:hover {
@@ -323,6 +398,11 @@ footer {
   header nav {
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
+  }
+
+  .nav-left, .nav-right {
+    justify-content: center;
   }
 
   .hero {
@@ -382,15 +462,77 @@ footer {
 /* Produk Unggulan */
 .featured {
   padding: 3rem 0;
-  background: #f0f4ff;
+  background: #e6e6e6;
+  border-radius: 0px;
+  margin-bottom: 3rem;
+}
+
+/* ===== Featured Grid (2 Kolom) ===== */
+.featured-row {
+  padding: 3rem 1rem;
+  background: #f9fafb;
+}
+
+.featured-row h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom sejajar */
+  gap: 2rem; /* jarak antar kolom */
+}
+
+.featured-card {
+  background: #fff;
   border-radius: 12px;
-  margin: 3rem 0;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  padding-bottom: 1rem;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+}
+
+.featured-card img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.featured-text {
+  padding: 1rem;
+}
+
+.featured-text h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.featured-text p {
+  margin: 0.5rem 0;
+}
+
+.featured-text .price {
+  font-weight: bold;
+  color: #2563eb; /* biru estafold */
 }
 
 .featured h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #1e3a8a;
+  color: #2563eb;
+}
+
+.featured h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2563eb;
 }
 
 .featured-content {
@@ -407,6 +549,19 @@ footer {
   object-fit: cover;    /* supaya gambar tetap rapi */
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.img-bridle {
+  width: 100%;
+  height: 330px;      /* lebih tinggi */
+  object-fit: cover;
+}
+
+.img-disasterology {
+  width: 100%;
+  height: 330px;      /* lebih rendah */
+  object-fit: cover; /* supaya tidak terpotong */
+  background: #f9fafb; /* kasih background abu2 biar rapi */
 }
 
 
@@ -437,6 +592,10 @@ footer {
   .featured-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr; /* Jadi 1 kolom */
   }
 
   .featured-text h3 {
@@ -594,6 +753,7 @@ footer {
   max-width: 80%;        /* Lebar maksimal 100% layar */
   margin: auto;           /* Tengah otomatis */
   overflow: hidden;       /* Sembunyikan bagian gambar yang keluar */
+  padding-bottom: 3rem;
 }
 
 .slides {

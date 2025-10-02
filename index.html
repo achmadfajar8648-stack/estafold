@@ -3,25 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katalog Baju - Estafold Biru</title>
+  <title>Estafold</title>
   <link rel="stylesheet" href="estafold-biru.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 <body>
-  <!-- Header -->
+
   <header>
-    <nav class="container">
+  <nav class="container header-nav">
+    <!-- Menu Kiri -->
+    <ul class="nav-left">
       <h1 class="logo">Estafold.id</h1>
-      <ul>
-        <li><a href="#home">Beranda</a></li>
-        <li><a href="#produk">Produk</a></li>
-      </ul>
-    </nav>
-  </header>
+    </ul>
+
+    <!-- Logo Tengah -->
+    <div class="nav-logo">
+      <img src="gambar/estafoldlogo.png" alt="Logo Estafold">
+    </div>
+
+    <!-- Menu Kanan -->
+    <ul class="nav-right">
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#home2">Produk</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <!-- Hero -->
-    <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-text container">
       <h1>AYO DESAIN BAJUMU SENDIRI</h1>
@@ -52,41 +62,55 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>  <!-- Tombol kanan -->
 </section>
 
-  <!-- Produk Unggulan -->
-  <section class="featured" id="unggulan">
-    <div class="container">
-      <h2>BEST SELLER</h2>
-      <div class="featured-content">
-        <img src="gambar/bridle.jpg" alt="Jaket Denim Premium">
+<!-- Hero2 -->
+  <section class="hero2" id="home">
+    <div class="hero-text container">
+        <h1>BEST SELLER</h1>
+    </div>
+  </section>
+
+  <!-- Produk Unggulan Gabungan -->
+<section class="featured-row">
+  <div class="container">
+    <div class="featured-grid">
+      
+      <!-- Kolom 1: Bridle -->
+      <div class="featured-card">
+        <img src="gambar/bridle.jpg" alt="Bridle Tshirt" class="img-bridle">
         <div class="featured-text">
-          <h3>BRIDLE TSHIRT</h3>
+          <h3>BRIDLE</h3>
           <p>
             Tshirt berkualitas tinggi dengan desain modern yang cocok untuk segala gaya.
             Nyaman dipakai, stylish, dan tahan lama.
           </p>
-          <p class="price">Rp350.000</p>
-          <a href="#produk" class="btn">Lihat Produk Lainnya</a>
+          <p class="price">Rp70.000</p>
+          <a href="#produk" class="btn">Buy</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Produk Unggulan 2 -->
-<section class="featured.alt">
-  <div class="container">
-    <div class="featured-content">
-      <div class="featured-text">
-        <h3>DISASTEROLOGY TSHIRT</h3>
-        <p>
-          Tshirt dengan detail modern. Cocok untuk tampilan kasual sehari-hari.
-        </p>
-        <p class="price">Rp450.000</p>
-        <a href="#produk" class="btn">Lihat Koleksi</a>
+      <!-- Kolom 2: Disasterology -->
+      <div class="featured-card">
+        <img src="gambar/DISASTEROLOGY.jpg" alt="Disasterology Tshirt" class="img-disasterology">
+        <div class="featured-text">
+          <h3>DISASTEROLOGY</h3>
+          <p>
+            Tshirt dengan detail modern. Cocok untuk tampilan kasual sehari-hari.
+          </p>
+          <p class="price">Rp70.000</p>
+          <a href="#produk" class="btn">Buy</a>
+        </div>
       </div>
-      <img src="gambar/DISASTEROLOGY.jpg" alt="Denim Jacket Classic">
+
     </div>
   </div>
 </section>
+
+<!-- Hero2 -->
+  <section class="hero2" id="home2">
+    <div class="hero-text container">
+      <h1>TSHIRT COLLECTION</h1>
+    </div>
+  </section>
 
   <!-- Katalog Produk dengan tombol geser -->
   <section class="catalog" id="produk">
@@ -100,52 +124,136 @@
         <div class="slider" id="slider">
             <!-- Produk 1 -->
             <div class="card">
-              <img src="gambar/REGULER BIRU.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
-            </div>
+                      <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/REGULER PUTIH.png" alt="Kaos Polos">
+                        <h3>WHITE</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp38.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp30.000</p>
+                        </div>
+                      </div>
+                    </div>
+
 
             <!-- Produk 2 -->
             <div class="card">
-              <img src="gambar/REGULER HITAM.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
-            </div>
+                      <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/REGULER HITAM.png" alt="Kaos Polos">
+                        <h3>BLACK</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp38.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp30.000</p>
+                        </div>
+                      </div>
+                    </div>
 
             <!-- Produk 3 -->
             <div class="card">
-              <img src="gambar/REGULER MAROON.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
-            </div>
+                      <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/REGULER MAROON.png" alt="Kaos Polos">
+                        <h3>MAROON</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp38.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp30.000</p>
+                        </div>
+                      </div>
+                    </div>
 
             <!-- Produk 4 -->
             <div class="card">
-              <img src="gambar/REGULER MERAH.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
-            </div>
+                      <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/REGULER MERAH.png" alt="Kaos Polos">
+                        <h3>RED</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp38.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp30.000</p>
+                        </div>
+                      </div>
+                    </div>
 
             <!-- Produk 5 -->
             <div class="card">
-              <img src="gambar/REGULER NAVY.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
-            </div>
+                      <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/REGULER NAVY.png" alt="Kaos Polos">
+                        <h3>NAVY</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp38.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp30.000</p>
+                        </div>
+                      </div>
+                    </div>
 
             <!-- Produk 6 -->
             <div class="card">
-              <img src="gambar/REGULER PUTIH.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
-            </div>
+                      <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/REGULER BIRU.png" alt="Kaos Polos">
+                        <h3>BLUE</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
 
-            <!-- Produk 7 -->
-            <div class="card">
-              <img src="gambar/REGULER BIRU.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
-            </div>
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp38.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp30.000</p>
+                        </div>
+                      </div>
+                    </div>
           </div>
 
 
@@ -158,7 +266,7 @@
   <!-- Katalog Produk 2 dengan tombol geser -->
 <section class="catalog" id="produk2">
   <div class="container">
-    <h2>OVERSIZE TSHIRT</h2>
+    <h2>OVERSIZE TSHIRT 24s</h2>
     <div class="slider-container">
       <!-- Tombol kiri -->
       <button class="slider-btn left" id="prevBtn2">&#10094;</button>
@@ -168,39 +276,39 @@
         <!-- Produk 1 -->
         <div class="card">
               <img src="gambar/OVESIZED/OVERSIZE ABU.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
+              <h3>GRAY</h3>
+              <p>Rp60.000</p>
             </div>
 
         <!-- Produk 2 -->
         <div class="card">
               <img src="gambar/OVESIZED/OVERSIZE HITAM.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
+              <h3>BLACK</h3>
+              <p>Rp60.000</p>
             </div>
 
         <!-- Produk 3 -->
         <div class="card">
               <img src="gambar/OVESIZED/OVERSIZE KHAKI.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
+              <h3>KHAKI</h3>
+              <p>Rp60.000</p>
             </div>
 
         <!-- Produk 4 -->
         <div class="card">
               <img src="gambar/OVESIZED/OVERSIZE MAROON.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
+              <h3>MAROON</h3>
+              <p>Rp60.000</p>
             </div>
         <div class="card">
               <img src="gambar/OVESIZED/OVERSIZE NAVY.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
+              <h3>NAVY</h3>
+              <p>Rp60.000</p>
             </div>
         <div class="card">
               <img src="gambar/OVESIZED/OVERSIZE PUTIH.png" alt="Kaos Polos">
-              <h3>Kaos Polos Premium</h3>
-              <p>Rp95.000</p>
+              <h3>WHITE</h3>
+              <p>Rp60.000</p>
             </div>
       </div>
 
@@ -222,44 +330,134 @@
       <div class="slider" id="slider4">
         <!-- Produk 1 -->
         <div class="card">
-              <img src="gambar/long/LONG BIRU.png" alt="Kaos Polos">
-              <h3>LongTshirt Biru</h3>
-              <p>Rp60.000</p>
+               <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/long/LONG HITAM.png" alt="Kaos Polos">
+                        <h3>BLACK</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp46.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp40.000</p>
+                        </div>
+                      </div>
             </div>
 
         <!-- Produk 2 -->
         <div class="card">
-              <img src="gambar/long/LONG HITAM.png" alt="Kaos Polos">
-              <h3>LongTshirt Hitam</h3>
-              <p>Rp60.000</p>
+              <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/long/LONG BIRU.png" alt="Kaos Polos">
+                        <h3>BLUE</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp46.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp40.000</p>
+                        </div>
+                      </div>
             </div>
 
 
         <!-- Produk 3 -->
         <div class="card">
-              <img src="gambar/long/LONG MAROON.png" alt="Kaos Polos">
-              <h3>LongTshirt Maroon</h3>
-              <p>Rp60.000</p>
+              <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/long/LONG MAROON.png" alt="Kaos Polos">
+                        <h3>MAROON</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp46.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp40.000</p>
+                        </div>
+                      </div>
             </div>
 
 
         <!-- Produk 4 -->
         <div class="card">
-              <img src="gambar/long/LONG MERAH.png" alt="Kaos Polos">
-              <h3>LongTshirt Merah</h3>
-              <p>Rp60.000</p>
+              <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/long/LONG MERAH.png" alt="Kaos Polos">
+                        <h3>RED</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp46.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp40.000</p>
+                        </div>
+                      </div>
             </div>
 
             <div class="card">
-              <img src="gambar/long/LONG NAVY.png" alt="Kaos Polos">
-              <h3>LongTshirt Navy</h3>
-              <p>Rp60.000</p>
+              <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/long/LONG NAVY.png" alt="Kaos Polos">
+                        <h3>NAVY</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp46.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp40.000</p>
+                        </div>
+                      </div>
             </div>
             
             <div class="card">
-              <img src="gambar/long/LONG PUTIH.png" alt="Kaos Polos">
-              <h3>LongTshirt Putih</h3>
-              <p>Rp60.000</p>
+              <!-- Baris 1: Gambar produk -->
+                      <div class="card-image">
+                        <img src="gambar/long/LONG PUTIH.png" alt="Kaos Polos">
+                        <h3>WHITE</h3>
+                        <h4>Cotton Combed</h4>
+                      </div>
+
+                      <!-- Baris 2: Info produk (2 kolom) -->
+                      <div class="card-info">
+                        <div class="info-left">
+                          <h3>24s</h3>
+                          <p>Rp46.000</p>
+                        </div>
+                        <div class="info-right">
+                          <h3>30s</h3>
+                          <p>Rp40.000</p>
+                        </div>
+                      </div>
             </div>
 
 
@@ -291,10 +489,16 @@
   </div>
 </section> -->
 
+<!-- Hero2 -->
+  <section class="hero2" id="home">
+    <div class="hero-text container">
+      <h1>DESIGN COLLECTION</h1>
+    </div>
+  </section>
+
   <!--Katalog Produk 3 sablon dengan tombol geser-->  
 <section class="catalog" id="produk3">
   <div class="container">
-    <h2>DESAIN KAMI</h2>
     <div class="slider-container">
       <!-- Tombol kiri -->
       <button class="slider-btn left" id="prevBtn3">&#10094;</button>
